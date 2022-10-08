@@ -79,6 +79,13 @@ function borrarCliente(cliente,listacliente){
 }
 
 function bajaCliente(){
+    Toastify({
+        text: "Ingrese el nombre del Cliente a Eliminar",
+        duration: 4000,
+        style: {
+            background: "linear-gradient(to left, #ff8000, #ffd200)",
+        },
+    }).showToast();
     borrarElemento("listadoCompletoClientes");
     borrarElemento("datosAltaCliente");
     opc = "b";
@@ -103,6 +110,13 @@ function veoCliente() {
 }
 
 function altaCliente(){
+    Toastify({
+        text: "Ingrese el nombre del Cliente que quiere agregar",
+        duration: 4000,
+        style: {
+            background: "linear-gradient(to left, #ff8000, #ffd200)",
+        },
+    }).showToast();
     borrarElemento("listadoCompletoClientes");
     pase=0;
     opc = "a";
@@ -135,11 +149,18 @@ function actualizoNvoCliente() {
     let loc = document.querySelector("#localidadCliente").value;
     let tel = document.querySelector("#telefonoCliente").value;
     agregarCliente(cliente,dir,loc,tel);
-    Swal.fire(
+    Toastify({
+        text: "Probando toast!",
+        duration: 3000,
+        style: {
+            background: "linear-gradient(to left, #00b09b, #96c92d)",
+        },
+    }).showToast();
+    /* Swal.fire(
         'Actualización',
         'El Cliente se agregó correctamente',
         'success'
-    );
+    ); */
     pase=0;
     listadoClientes();
 }
@@ -169,6 +190,13 @@ function borrarElemento(elementID) {
 }
 
 function listadoClientes() {
+    Toastify({
+        text: "Se muestran los clientes activos",
+        duration: 4000,
+        style: {
+            background: "linear-gradient(to left, #ff8000, #ffd200)",
+        },
+    }).showToast();
     borrarElemento("listadoCompletoClientes");
     pase=0;
     listaCompletoCLientes(listacliente);

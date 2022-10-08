@@ -7,36 +7,85 @@ switch (diasemana) {
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Lunes son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Lunes",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;
     case 2:
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Martes son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Martes",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;        
     case 3:
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Miércoles son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Miércoles",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;        
     case 4:
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Jueves son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Jueves",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;        
     case 5:
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Viernes son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Viernes",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;        
     case 6:
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Sábado son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Sábado",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;    
     case 0:
         haypromo = document.createElement("div");
         haypromo.innerHTML = "<h3>Las promociones del día Domingo son: </h3>";
         promocionValida.append(haypromo);
+        Toastify({
+            text: "Estas son las promociones del día Domingo",
+            duration: 4000,
+            style: {
+                background: "linear-gradient(to left, #ff8000, #ffd200)",
+            },
+        }).showToast();
         break;                                    
     default:
         break;
@@ -68,3 +117,4 @@ fetch(prodPromo)
         })
 	})
 	.catch((e) => console.log(e))
+

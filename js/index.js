@@ -26,6 +26,14 @@ let pedidofinal='';
 let cod= 0;
 let cliente ='';
 
+Toastify({
+    text: "Esta es la Entrega Final de Ana Inés Kessler Comisión #34005",
+    duration: 4000,
+    style: {
+        background: "linear-gradient(to left, #ffd000, #ff0000)",
+    },
+}).showToast();
+
 function agregarProducto(prod,cant,prec){
     pedidoproducto.push({producto: prod,cantidad: cant, costo: prec});
 } 
