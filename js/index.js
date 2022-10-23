@@ -1,18 +1,3 @@
-const listaproductos = [
-    {producto:'ravioles', precio: 1200},
-    {producto:'sorrentinos', precio: 1500},
-    {producto:'agnolotis', precio: 1800},
-    {producto:'fideos', precio: 650},
-    {producto:'ñoquis',precio: 750},
-];
-
-const listacliente = [
-    {nombre: "Mariana Perez", direccion: "Rivadavia 45"},
-    {nombre: "Gonzalo Rodriguez", direccion: "Concordia 432"},
-    {nombre: "Sandra Bertolo", direccion: "Leones 344"},
-    {nombre: "Andres Suarez", direccion: "Figueroa 424"},
-];
-
 //inicialización variables
 let pedidoproducto =[];
 let listadopedido =[];
